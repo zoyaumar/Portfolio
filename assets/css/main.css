@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	cursor:default;
 }
 
 ol, ul {
@@ -3236,11 +3237,11 @@ input, select, textarea {
 			}
 
 		.wrapper.alt {
-			background-color: #261c3e;
+			background-color: #1b1230;
 		}
 
 		.wrapper.style1 {
-			background-color: #5e42a6;
+			background-color: #4100aa;
 		}
 
 		.wrapper.style1-alt {
@@ -3524,7 +3525,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #312450;
+		background: #180f41;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3906,4 +3907,48 @@ input, select, textarea {
 				background-attachment: scroll;
 			}
 
+		}
+
+
+		.cursor {
+			width: 20px;
+			height: 20px;
+			border: 1px solid white;
+			border-radius: 50%;
+			position: absolute;
+			transition-duration: 300ms;
+			transition-timing-function: ease-out;
+		  }
+		  
+		.cursor::after{
+			content:"";
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			border: 4.5px solid white;
+			border-radius: 50%;
+			opacity: .5;
+			top: -3%; /* Center vertically */
+    		left: -3%; /* Center horizontally */
+			animation: cursorAnim2 .8s infinite alternate;
+		}
+		
+		@keyframes cursorAnim {
+			from{
+				transform: scale(2);
+			}
+			to{
+				transform: scale(.3);
+			}
+		
+		}
+		
+		@keyframes cursorAnim2 {
+			from{
+				transform: scale(1.5);
+			}
+			to{
+				transform: scale(.6);
+			}
+		
 		}
