@@ -3918,6 +3918,7 @@ input, select, textarea {
 			position: absolute;
 			z-index: 9999;
 			transition-duration: 300ms;
+			pointer-events: none;
 			transition-timing-function: ease-out;
 		  }
 		  
@@ -3929,8 +3930,8 @@ input, select, textarea {
 			border: 4.5px solid white;
 			border-radius: 50%;
 			opacity: .5;
-			top: -3%; /* Center vertically */
-    		left: -3%; /* Center horizontally */
+			top: -3%; 
+    		left: -3%; 
 			animation: cursorAnim2 .8s infinite alternate;
 		}
 		
@@ -3966,4 +3967,12 @@ input, select, textarea {
 	position: relative;
 	width: 100%; 
 	height:auto;
+}
+
+.spotlights > .projects  {
+	padding: 1em;
+	min-height: 1em;
+}
+.spotlights > .projects > .content {
+	padding: 1em 2em 0em 3em;
 }
