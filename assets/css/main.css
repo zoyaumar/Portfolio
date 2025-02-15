@@ -2502,13 +2502,13 @@ input, select, textarea {
 	.icon {
 		text-decoration: none;
 		border-bottom: none;
-		/* position:relative; */
+		position:relative;
 	}
 
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			/* display: inline-block; */
+			display: inline-block;
 			font-style: normal;
 			font-variant: normal;
 			text-rendering: auto;
@@ -4002,7 +4002,7 @@ input, select, textarea {
 	padding: 1em 2em 0em 3em;
 }
 
-.icons  {
+.icons1  {
 	width:2em;
 }
 
