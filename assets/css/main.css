@@ -4001,3 +4001,11 @@ input, select, textarea {
 .spotlights > .projects > .content {
 	padding: 1em 2em 0em 3em;
 }
+
+.icons  {
+	width:2em;
+}
+
+.icons2 {
+	font-size: 1.5em;
+}
